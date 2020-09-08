@@ -1,6 +1,7 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
 \usepackage{listings}
 \usepackage{graphicx}
 \graphicspath{ {images/} }
@@ -61,44 +62,44 @@
 	\begin{tcolorbox}[colupper=red!75!black]
 		\textbf{Memoria}
 		\tcblower
-		Dispositivos de almacenamiento temporal y alta velocidad de acceso. Cumple un papel fundamental en el funcionamiento de una computadora.
+		Dispositivos de almacenamiento temporal y alta velocidad de acceso a la informacion requerida por el microprocesador. Cumple un papel fundamental en el funcionamiento de una computadora.
 	\end{tcolorbox}
 	
 	\subsection{Mencione los tipos de memoria que conoce y haga una pequeña descripción de cada tipo}
 	
 	\begin{tcolorbox}[colupper=red!75!black]
-		\textbf{1. Memoria RAM}
+		\textbf{Memoria Cache}
 		\tcblower
+		La memoria cache, es una memoria de acceso rapido. Su principal funcion es servir de apoyo al microprocesador, puesto que puede trabajar a altas velocidades. Tiene diferentes niveles: L1, L2, L3. La mas rapida y cercana al microproceador es el nivel L1, tambien es la que tiene menor capacidad. Seguido del nivel L2 un poco mas lento que L1, pero con mayor capacidad. Y finalmente el nivel L3 el cual es mas lento que L1 y que L2. Pero, con mayo capacidad que las dos anteriores y mucho mas rapido que la memoria RAM.
 	\end{tcolorbox}
-	\begin{tcolorbox}[colupper=red!75!black]
-		\textbf{2. Memoria ROM}
-		\tcblower
-	\end{tcolorbox}
-	\begin{tcolorbox}[colupper=red!75!black]
-		\textbf{3. Memoria Cache}
-		\tcblower
-	\end{tcolorbox}
-	\begin{tcolorbox}[colupper=red!75!black]
-		\textbf{5. Memoria RAM estatica (SRAM)}
-		\tcblower
-	\end{tcolorbox}
-	\begin{tcolorbox}[colupper=red!75!black]
-		\textbf{6. Memoria Flash}
-		\tcblower
-	\end{tcolorbox}
-	\begin{tcolorbox}[colupper=red!75!black]
-		\textbf{7. Memoria Virtua}
-		\tcblower
-	\end{tcolorbox}
-	\begin{tcolorbox}[colupper=red!75!black]
-		\textbf{	8. Memoria de video (VRAM)}
-		\tcblower
-	\end{tcolorbox}
-	\subsection{Describa la manera como se gestiona la memoria en un computador}
 	
 	\begin{tcolorbox}[colupper=red!75!black]
-		\textbf{}
+		\textbf{Memoria RAM}
 		\tcblower
+		Es la memoria peincipal de la computadora, y se encarga de almacenar la informacion durante la ejecuccion del sofware. Alamacena los datos de forma temporal, es por esto que se le conoce como una memoria volatil. Puesto que, al cesar el flujo de corriente los datos no quedan almacenados.Ademaas, es aleatoria porque puede aceder a los datos de forma desordenada.
+	\end{tcolorbox}
+	
+	\begin{tcolorbox}[colupper=red!75!black]
+		\textbf{Memoria Virtual}
+		\tcblower
+		Porcion del dico duro dedicado temporalmente para complementar la memoria RAM, en caso de que esta este por agotarse.
+	\end{tcolorbox}
+	
+	\begin{tcolorbox}[colupper=red!75!black]
+		\textbf{Disco duro}
+		\tcblower
+		Es un tipo de dispositivo de memoria que permite almacenar grandes cantidades de informacion, incluso en auscencia de corriente electrica.
+	\end{tcolorbox}
+	
+	\subsection{Describa la manera como se gestiona la memoria en un computador}
+	\begin{tcolorbox}[colupper=red!75!black]
+		\textbf{Controlador de memoria}
+		\tcblower
+		El controlador de memoria se encarga de gestionar cada tarea de la memoria, comunicando las instrucciones del microprocesador, interviniendo en cada transferencia de información desde y hacia la memoria, y estableciendo el ritmo o la velocidad con que se realizan las operaciones a través de su reloj que marca millones de ciclos por segundo (medidos en Mhz o Megahertz).
+		\vspace{0.1cm}
+		Dicho controlador de memoria puede encontrarse en uno de los siguientes dos lugares:\\
+		1. En un chip ubicado en la placa madre entre los módulos de memoria y la CPU o el microprocesador, y que se denomina Northbridge o MCH (Memory Controller Hub - Centro de Control de Memoria).\\
+		2. En sistemas más modernos se encuentra incorporado dentro del microprocesador
 		
 	\end{tcolorbox}
 	
