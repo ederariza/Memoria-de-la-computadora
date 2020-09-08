@@ -82,7 +82,7 @@
 	\begin{tcolorbox}[colupper=red!75!black]
 		\textbf{Memoria Virtual}
 		\tcblower
-		Porcion del dico duro dedicado temporalmente para complementar la memoria RAM, en caso de que esta este por agotarse.
+		Porcion del dico duro dedicado temporalmente para complementar la memoria RAM, en caso de que esta este por agotarse
 	\end{tcolorbox}
 	
 	\begin{tcolorbox}[colupper=red!75!black]
@@ -99,11 +99,26 @@
 		\vspace{0.1cm}
 		Dicho controlador de memoria puede encontrarse en uno de los siguientes dos lugares:\\
 		1. En un chip ubicado en la placa madre entre los módulos de memoria y la CPU o el microprocesador, y que se denomina Northbridge o MCH (Memory Controller Hub - Centro de Control de Memoria).\\
-		2. En sistemas más modernos se encuentra incorporado dentro del microprocesador
-		
+		2. En sistemas más modernos se encuentra incorporado dentro del microprocesador.
 	\end{tcolorbox}
 	
 	\subsection{¿Qué hace que una memoria sea más rápida que otra? ¿Por qué esto es importante?}
+	Para intentar dar respuesta a esta pregunta debemos tener claros los siguientes conceptos:\\
+	\begin{tcolorbox}[colupper=red!75!black]
+		\textbf{Latencia}
+		\tcblower
+		Medida que se suele utilizar para medir el nivel de eficiencia de un módulo de memoria es
+		la latencia, la cual está relacionada con el proceso electrónico de lectura y escritura de los datos en la memoria SDRAM. en otras palabras la latencia es la cantidad de tiempo que se tarda en obtener de la memoria cada bit de información. En otras palabras, podria decirse que es el tiempo que pasa desde que el controlador de memoria realiza una peticion y obtiene una respuesta.
+	\end{tcolorbox}
 	
+	\begin{tcolorbox}[colupper=red!75!black]
+		\textbf{Frecuencia}
+		\tcblower
+		Ritmo de trabajo o velocidad con la que se comunica la memoria con el bus de control.
+	\end{tcolorbox}
+	Lo anterior es importante a tener en cuenta, puesto que puede afectar el rendimiento de nuestra memoria.
 	
+	\subsection{Citacion}
+	\bibliographystyle{IEEEtran}
+	\bibliography{references}
 \end{document}
