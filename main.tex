@@ -1,58 +1,60 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
-\usepackage[latin1]{inputenc}
-\usepackage{listings}
 \usepackage{graphicx}
 \graphicspath{ {images/} }
 \usepackage{cite}
 \usepackage[most]{tcolorbox}
 
 \begin{document}
-	
+
 \begin{titlepage}
 	
     \begin{center}
-    	
-    	\vspace*{1cm}
-    	
-    	\Huge
-    	\textbf{Memoria de la computadora}
-    	
-    	\vspace{0.5cm}
-         
-         \LARGE
-         Taller
-         
-        \vspace{0.5cm}
-        
-    	\LARGE
-    	\textbf{Eder Alfonso Ariza Chamorro}\\
-    	Estudiante de Ingenieria de Telecomunicaciones\\
-    	
-    	\vspace*{1.5cm}
-		
-    	\begin{figure}[h]
-    		\includegraphics[width=5cm]{Logo UdeA.png}
-    		\centering
-    		\label{fig:Logo UdeA}
-    	\end{figure}
-    
-    	\vspace*{2cm}
-    	
-    	\Large
-    	Despartamento de Ingeniería Electrónica y Telecomunicaciones\\
-    	Universidad de Antioquia\\
-    	Medellín\\
-    	Septiembre 4 de 2020
-    	
+	
+		\vspace*{1cm}
+	
+		\Huge
+		\textbf{Memoria de la computadora}
+	
+		\vspace{0.5cm}
+	
+		\LARGE
+		Taller
+	
+		\vspace{0.5cm}
+	
+		\LARGE
+		\textbf{Eder Alfonso Ariza Chamorro}\\
+		Estudiante de Ingenieria de Telecomunicaciones\\
+	
+		\vspace*{1.5cm}
+	
+		\begin{figure}[h]
+			\includegraphics[width=5cm]{Logo UdeA.png}
+			\centering
+			\label{fig:Logo UdeA}
+		\end{figure}
+	
+		\vspace*{2cm}
+	
+		\Large
+		Despartamento de Ingeniería Electrónica y Telecomunicaciones\\
+		Universidad de Antioquia\\
+		Medellín\\
+		Septiembre 4 de 2020
+	
 	\end{center}
 
 \end{titlepage}
 
-
 \tableofcontents
 \newpage
+
+
+\section{Introduccion}\label{intro}
+
+
 \section{Sección de preguntas}\label{contenido}
 
 \subsection{Defina que es la memoria del computador}
@@ -93,32 +95,35 @@
 
 \subsection{Describa la manera como se gestiona la memoria en un computador}
 \begin{tcolorbox}[colupper=red!75!black]
-    \textbf{Controlador de memoria}
-    \tcblower
+	\textbf{Controlador de memoria}
+	\tcblower
 	El controlador de memoria se encarga de gestionar cada tarea de la memoria, comunicando las instrucciones del microprocesador, interviniendo en cada transferencia de información desde y hacia la memoria, y estableciendo el ritmo o la velocidad con que se realizan las operaciones a través de su reloj que marca millones de ciclos por segundo (medidos en Mhz o Megahertz).
 	\vspace{0.1cm}
-    Dicho controlador de memoria puede encontrarse en uno de los siguientes dos lugares:\\
-    1. En un chip ubicado en la placa madre entre los módulos de memoria y la CPU o el microprocesador, y que se denomina Northbridge o MCH (Memory Controller Hub - Centro de Control de Memoria).\\
-    2. En sistemas más modernos se encuentra incorporado dentro del microprocesador.
+	Dicho controlador de memoria puede encontrarse en uno de los siguientes dos lugares:\\
+	1. En un chip ubicado en la placa madre entre los módulos de memoria y la CPU o el microprocesador, y que se denomina Northbridge o MCH (Memory Controller Hub - Centro de Control de Memoria).\\
+	2. En sistemas más modernos se encuentra incorporado dentro del microprocesador.
 \end{tcolorbox}
 
 \subsection{¿Qué hace que una memoria sea más rápida que otra? ¿Por qué esto es importante?}
-    Para intentar dar respuesta a esta pregunta debemos tener claros los siguientes conceptos:\\
+Para intentar dar respuesta a esta pregunta debemos tener claros los siguientes conceptos:\\
 \begin{tcolorbox}[colupper=red!75!black]
 	\textbf{Latencia}
 	\tcblower
-    Medida que se suele utilizar para medir el nivel de eficiencia de un módulo de memoria es
-    la latencia, la cual está relacionada con el proceso electrónico de lectura y escritura de los datos en la memoria SDRAM. en otras palabras la latencia es la cantidad de tiempo que se tarda en obtener de la memoria cada bit de información. En otras palabras, podria decirse que es el tiempo que pasa desde que el controlador de memoria realiza una peticion y obtiene una respuesta.
+	Medida que se suele utilizar para medir el nivel de eficiencia de un módulo de memoria es
+	la latencia, la cual está relacionada con el proceso electrónico de lectura y escritura de los datos en la memoria SDRAM. en otras palabras la latencia es la cantidad de tiempo que se tarda en obtener de la memoria cada bit de información. En otras palabras, podria decirse que es el tiempo que pasa desde que el controlador de memoria realiza una peticion y obtiene una respuesta.
 \end{tcolorbox}
 
 \begin{tcolorbox}[colupper=red!75!black]
 	\textbf{Frecuencia}
 	\tcblower
-    Ritmo de trabajo o velocidad con la que se comunica la memoria con el bus de control.
+	Ritmo de trabajo o velocidad con la que se comunica la memoria con el bus de control.
 \end{tcolorbox}
-    Lo anterior es importante a tener en cuenta, puesto que puede afectar el rendimiento de nuestra memoria.
-    
-\subsection{Citacion}
+Lo anterior es importante a tener en cuenta, puesto que puede afectar el rendimiento de nuestra memoria.
+
+\section{Citación}
+Documento basado en el artículo: Como funciona la memoria de una computadora por \textbf{Augusto Salazar} \cite{Salazar}.
+
 \bibliographystyle{IEEEtran}
 \bibliography{references}
+
 \end{document}
